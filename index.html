@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>寅虎食堂 - Toratora Syokudou</title>
     <meta name="description" content="本日のメニューはInstagramをチェック！ポップで親しみやすい寅虎食堂へようこそ。">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="寅虎食堂 - Toratora Syokudou">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.youcafe.jp/"> <!-- Assuming URL structure or placeholder -->
+    <meta property="og:image" content="https://www.youcafe.jp/assets/ogp.png"> <!-- Absolute path usually required for OGP, using placeholder base for now or relative if supported locally -->
+    <meta property="og:description" content="お腹も心も満たされる場所。本日のメニューはInstagramをチェック！">
+    <meta property="og:site_name" content="寅虎食堂">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
@@ -14,7 +23,9 @@
 <body>
     <header class="site-header">
         <div class="container header-container">
-            <h1 class="logo">寅虎食堂</h1>
+            <h1 class="logo">
+                <img src="assets/character_base.jpg" alt="寅虎食堂" height="60" class="logo-img">
+            </h1>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#concept">コンセプト</a></li>
@@ -55,18 +66,8 @@
                         <p>手作りの温かさと、<br class="desktop-br">栄養満点のごはんで、<br class="desktop-br">あなたの一日を応援します。</p>
                     </div>
                     <div class="concept-visual">
-                        <div class="circle-image custom-illustration">
-                            <!-- CSS Illustration of a rice bowl/tiger -->
-                            <div class="tiger-face">
-                                <div class="ear left"></div>
-                                <div class="ear right"></div>
-                                <div class="face">
-                                    <div class="eye left"></div>
-                                    <div class="eye right"></div>
-                                    <div class="nose"></div>
-                                    <div class="mouth"></div>
-                                </div>
-                            </div>
+                        <div class="circle-image">
+                            <img src="assets/character_base.jpg" alt="寅虎キャラクター" class="concept-character">
                         </div>
                     </div>
                 </div>

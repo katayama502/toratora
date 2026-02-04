@@ -90,12 +90,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Logo */
 .logo {
-    font-weight: 800;
-    color: var(--color-primary);
-    font-size: 1.8rem;
-    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    border-radius: 50%; /* Make round */
+    border: 3px solid var(--color-primary);
 }
 
 .main-nav ul {
@@ -256,63 +261,15 @@ body {
     justify-content: center;
 }
 
-/* CSS Tiger Illustration */
-.tiger-face {
-    width: 200px;
-    height: 180px;
-    background: var(--color-primary);
-    border-radius: 50% 50% 40% 40%;
-    position: relative;
-    border: 6px solid #4a3b2a;
-}
-.tiger-face .ear {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: var(--color-primary);
-    border: 6px solid #4a3b2a;
+/* Concept Visual */
+.concept-character {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    top: -15px;
-    z-index: -1;
-}
-.tiger-face .ear.left { left: 10px; }
-.tiger-face .ear.right { right: 10px; }
-
-.tiger-face .face {
-    position: relative;
-    height: 100%;
-}
-.tiger-face .eye {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #4a3b2a;
-    border-radius: 50%;
-    top: 60px;
-}
-.tiger-face .eye.left { left: 50px; }
-.tiger-face .eye.right { right: 50px; }
-
-.tiger-face .nose {
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    background: #4a3b2a;
-    border-radius: 40%;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.tiger-face .mouth {
-    position: absolute;
-    width: 60px;
-    height: 30px;
-    border-bottom: 5px solid #4a3b2a;
-    border-radius: 0 0 30px 30px;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    object-fit: cover;
+    border: 8px solid var(--color-primary);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: float 6s infinite ease-in-out;
 }
 
 /* Menu Section */
